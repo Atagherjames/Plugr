@@ -1,0 +1,87 @@
+.recent-updates-card {
+  background-color: #fff; /* Assuming a white background */
+  border-radius: 12px; /* Increased border-radius */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-top: 16px;
+  /* margin-bottom: 0; Removed bottom margin */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.header h2 {
+  font-size: 1.2em;
+  margin: 0;
+  color: #333;
+}
+
+.more-button {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  color: #777;
+  font-size: 1.2em;
+}
+
+.more-button:hover {
+  color: #555;
+}
+
+.updates-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.update-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+}
+
+.update-item:last-child {
+  border-bottom: none;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  color: #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  margin-right: 12px;
+}
+
+.avatar i {
+  font-size: 1.2em;
+}
+
+.details {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.message {
+  font-size: 0.9em;
+  color: #333;
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
+.time {
+  font-size: 0.8em;
+  color: #777;
+  margin: 0 0 0 8px;
+  white-space: nowrap;
+}

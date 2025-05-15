@@ -1,0 +1,82 @@
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.welcome-msg {
+  line-height: 6px;
+}
+
+.welcome-msg h4 {
+  color: black !important;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  button {
+    font-size: 0.875rem;
+    text-transform: none;
+    border-radius: 50px;
+  }
+
+  button.active {
+    background: #ed1c24;
+    color: white;
+  }
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.custom-card {
+  width: 220px;
+  border-radius: 15px;
+  border: 1px solid #bac0d499;
+}
+
+/* Small, clean success badge */
+.badge-success-box {
+  background-color: #d4edda;
+  position: absolute;
+  height: 20px;
+  width: 50px;
+  right: 20px;
+  color: #155724;
+  border-radius: 10px;
+  font-size: 8px;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4px;
+  gap: 4px;
+}
+
+mat-card-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 90%;
+}
+
+.chart-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.left-section {
+  flex: 2;
+}
+
+.right-section {
+  flex: 1;
+}

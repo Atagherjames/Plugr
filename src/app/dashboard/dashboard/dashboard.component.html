@@ -1,0 +1,75 @@
+<header class="dashboard-header">
+  <div class="welcome-msg">
+    <h4>Welcome Back, Oliva</h4>
+    <p>Create, manage, and share streaming</p>
+  </div>
+  <div class="actions">
+    <button mat-button class="active">
+      <i class="bi bi-broadcast-pin"></i> Go Live
+    </button>
+    <button mat-stroked-button>
+      <i class="bi bi-calendar-check"></i> Schedule for later
+    </button>
+    <button mat-stroked-button>
+      <i class="bi bi-camera-video-fill"></i> Upload recording
+    </button>
+  </div>
+</header>
+
+<section class="cards-container">
+  <mat-card class="custom-card">
+    <mat-card-header>
+      <mat-card-subtitle>Total Earnings</mat-card-subtitle>
+      <mat-card-title>$200,000</mat-card-title>
+    </mat-card-header>
+  </mat-card>
+  <mat-card class="custom-card">
+    <mat-card-header>
+      <mat-card-subtitle>Total Listeners</mat-card-subtitle>
+      <mat-card-title>1500K</mat-card-title>
+    </mat-card-header>
+  </mat-card>
+
+  <mat-card class="custom-card">
+    <mat-card-header>
+      <mat-card-subtitle>Total Streams</mat-card-subtitle>
+      <mat-card-title
+        ><span>10.05K</span
+        ><span class="badge-success-box">
+          <i class="bi bi-arrow-up"></i> 100%
+        </span></mat-card-title
+      >
+    </mat-card-header>
+  </mat-card>
+  <mat-card class="custom-card">
+    <mat-card-header class="card-header-fixed">
+      <mat-card-subtitle>Total Followers</mat-card-subtitle>
+
+      <mat-card-title
+        ><span>10K</span
+        ><span class="badge-success-box">
+          <i class="bi bi-arrow-up"></i> 100%
+        </span></mat-card-title
+      >
+    </mat-card-header>
+  </mat-card>
+</section>
+
+<div class="chart-container">
+  <div class="left-section">
+    <app-monthly-listeners></app-monthly-listeners>
+  </div>
+  <div class="right-section">
+    <app-top-listeners></app-top-listeners>
+  </div>
+</div>
+
+<div class="chart-container">
+  <div class="left-section">
+    <app-upcoming-events></app-upcoming-events>
+  </div>
+  <div class="right-section">
+    <app-recent-updates></app-recent-updates>
+  </div>
+</div>
+<router-outlet></router-outlet>

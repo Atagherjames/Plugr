@@ -1,0 +1,17 @@
+<div class="chart-container">
+  <div class="chart-header">
+    <h3>Top Listeners</h3>
+    <i class="bi bi-three-dots-vertical"></i>
+  </div>
+
+  <div class="chart-wrapper">
+    <canvas
+      baseChart
+      *ngIf="isBrowser"
+      [type]="doughnutChartType"
+      [data]="doughnutChartData"
+      [options]="doughnutChartOptions"
+    >
+    </canvas>
+  </div>
+</div>

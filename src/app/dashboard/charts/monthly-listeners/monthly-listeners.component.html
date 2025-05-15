@@ -1,0 +1,15 @@
+<div *ngIf="isBrowser" class="chart-container">
+  <div class="chart-header">
+    <h3>Monthly Listeners</h3>
+    <i class="bi bi-bar-chart"></i>
+  </div>
+  <canvas
+    baseChart
+    [datasets]="barChartData.datasets"
+    [labels]="barChartData.labels"
+    [options]="barChartOptions"
+    [legend]="true"
+    [type]="'bar'"
+  >
+  </canvas>
+</div>
