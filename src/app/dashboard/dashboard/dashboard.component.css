@@ -21,6 +21,7 @@
     font-size: 0.875rem;
     text-transform: none;
     border-radius: 50px;
+    color: #333;
   }
 
   button.active {
@@ -41,6 +42,7 @@
   width: 220px;
   border-radius: 15px;
   border: 1px solid #bac0d499;
+  background: #ffff;
 }
 
 /* Small, clean success badge */
@@ -71,12 +73,21 @@ mat-card-title {
 .chart-container {
   display: flex;
   gap: 1rem;
+  margin-top: 40px;
 }
 
 .left-section {
   flex: 2;
+  min-width: 0;
 }
 
 .right-section {
   flex: 1;
+}
+
+@media (max-width: 768px) {
+  .left-section {
+    flex: 1 1 100%;
+    width: 100%;
+  }
 }

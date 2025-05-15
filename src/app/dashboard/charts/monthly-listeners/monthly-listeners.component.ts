@@ -40,6 +40,8 @@ export class MonthlyListenersComponent implements OnInit {
 
   barChartOptions = {
     responsive: true,
+    maintainAspectRatio: false,
+    // devicePixelRatio: window.devicePixelRatio || 1,
     scales: {
       x: {
         grid: {
@@ -55,11 +57,11 @@ export class MonthlyListenersComponent implements OnInit {
     },
     plugins: {
       tooltip: {
-        backgroundColor: 'rgba(0, 0, 0, 0.8)', // Dark background with some transparency
-        titleColor: '#fff', // White color for the title (if any)
-        bodyColor: '#fff', // White color for the body text (label and value)
-        boxPadding: 8, // Adjust padding inside the tooltip
-        cornerRadius: 4, // Add rounded corners (adjust value as needed)
+        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+        titleColor: '#fff',
+        bodyColor: '#fff',
+        boxPadding: 8,
+        cornerRadius: 4,
         callbacks: {
           label: (context: any) => {
             let label = context.dataset.label || '';
@@ -68,7 +70,7 @@ export class MonthlyListenersComponent implements OnInit {
               label += ': ';
             }
             if (context.parsed.y !== null) {
-              label += new Intl.NumberFormat().format(context.parsed.y); // Format the number
+              label += new Intl.NumberFormat().format(context.parsed.y);
             }
             return label;
           },

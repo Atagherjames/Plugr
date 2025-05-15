@@ -21,6 +21,7 @@ export class TopListenersComponent implements OnInit {
 
   public doughnutChartData = {
     labels: this.doughnutChartLabels,
+
     datasets: [
       {
         data: [this.listenerData[0]],

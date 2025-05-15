@@ -14,6 +14,11 @@
   color: #333;
 }
 
+.upcoming-events-container a {
+  text-decoration: underline;
+  color: #ed1c24;
+}
+
 .header {
   display: flex;
   justify-content: space-between;

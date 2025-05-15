@@ -11,12 +11,15 @@ app-header {
   width: 100%;
   box-sizing: border-box;
   padding: 16px 20px;
+  padding-top: 0;
+  padding-bottom: 0;
   z-index: 10;
 }
 
 .main-layout {
   display: flex;
   flex-grow: 1;
+  margin-top: 50px;
 }
 
 app-sidebar {
@@ -30,5 +33,18 @@ app-sidebar {
   padding: 40px;
   margin: 40px;
   box-sizing: border-box;
+  flex-wrap: wrap;
   border-radius: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  app-sidebar {
+    width: 100%;
+  }
+
+  .content {
+    margin: 20px 10px;
+    padding: 20px;
+  }
 }
